@@ -11,6 +11,7 @@ import AsyncDisplayKit
 class MainTabBarNode: ASDisplayNode {
     var nodepager: ASPagerNode?
     let datasource: [MainTabType] = [MainTabType.onGoing, MainTabType.selesai]
+    let selector: MainTabBarSelectorNode = MainTabBarSelectorNode()
     
     override init() {
         super.init()
@@ -23,11 +24,28 @@ class MainTabBarNode: ASDisplayNode {
         self.nodepager?.allowsAutomaticInsetsAdjustment = true
         self.nodepager?.setDelegate(self)
         self.nodepager?.setDataSource(self)
+        self.selector.delegate = self
     }
     
     override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
         let wrap = ASWrapperLayoutSpec(layoutElement: self.nodepager!)
-        return wrap
+        wrap.style.flexGrow = 1
+        let stack = ASStackLayoutSpec(direction: .vertical, spacing: 0, justifyContent: .start, alignItems: .start, children: [
+            self.selector,
+            wrap
+        ])
+        return stack
+    }
+}
+
+extension MainTabBarNode: MainTabBarSelectorNodeDelegate {
+    func callbackOnTap(type: MainTabType) {
+        switch type {
+        case .onGoing:
+            self.nodepager?.scrollToPage(at: 0, animated: true)
+        case .selesai:
+            self.nodepager?.scrollToPage(at: 1, animated: true)
+        }
     }
 }
 

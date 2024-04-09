@@ -1,0 +1,71 @@
+//
+//  MainTabBarSelectorMain.swift
+//  catetin
+//
+//  Created by aldinugroho on 09/04/24.
+//
+
+import Foundation
+import AsyncDisplayKit
+
+protocol MainTabBarSelectorNodeDelegate: AnyObject {
+    func callbackOnTap(type: MainTabType)
+}
+
+class MainTabBarSelectorNode: ASDisplayNode {
+    weak var delegate: MainTabBarSelectorNodeDelegate?
+    
+    let tv1: ASTextNode = ASCustom.label(value: "On Progress", fontSize: nil, fontColor: nil, fontWeight: nil, tag: 1)
+    let tv2: ASTextNode = ASCustom.label(value: "Selesai", fontSize: nil, fontColor: nil, fontWeight: nil, tag: 2)
+    
+    override init() {
+        super.init()
+        self.automaticallyManagesSubnodes = true
+        setupNode()
+        setupGestureRecognizer()
+    }
+    
+    func setupGestureRecognizer() {
+        self.tv1.addTarget(self, action: #selector(self.tvTap), forControlEvents: .touchDown)
+        self.tv2.addTarget(self, action: #selector(self.tvTap), forControlEvents: .touchDown)
+    }
+    
+    override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
+        let hstack = ASStackLayoutSpec(direction: .horizontal, spacing: 0, justifyContent: .spaceAround, alignItems: .center, children: [
+            self.tv1,
+            self.tv2
+        ])
+        hstack.style.width = ASDimensionMake("100%")
+        let inset = ASInsetLayoutSpec(insets: UIEdgeInsets(top: 15, left: 10, bottom: 15, right: 10), child: hstack)
+        return inset
+    }
+    
+    func setupNode() {
+        self.backgroundColor = .white
+    }
+}
+
+extension MainTabBarSelectorNode {
+    @objc func tvTap(sender: ASTextNode) {
+        if sender.view.tag == 1 {
+            delegate?.callbackOnTap(type: MainTabType.onGoing)
+        }
+        if sender.view.tag == 2 {
+            delegate?.callbackOnTap(type: MainTabType.selesai)
+        }
+    }
+}
+
+class ASCustom {
+    static func label(value: String?, fontSize: CGFloat?, fontColor: UIColor?, fontWeight: UIFont.Weight?, tag: Int) -> ASTextNode {
+        let ctx = ASTextNode()
+        ctx.view.tag = tag
+        let attrs: [NSAttributedString.Key: Any] = [
+            .font: UIFont.systemFont(ofSize: fontSize ?? 15.0, weight: fontWeight ?? UIFont.Weight.medium),
+            .foregroundColor: fontColor ?? UIColor.black
+        ]
+        let string = NSAttributedString(string: value ?? "", attributes: attrs)
+        ctx.attributedText = string
+        return ctx
+    }
+}
