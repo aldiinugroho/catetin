@@ -7,23 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E08AE8A2BC4E0010037A654 /* MainTabNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E08AE892BC4E0010037A654 /* MainTabNode.swift */; };
+		4E08AE8C2BC4E2A80037A654 /* Utilssize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E08AE8B2BC4E2A80037A654 /* Utilssize.swift */; };
 		4EE4DE712BC3CD6B004FD7C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE4DE702BC3CD6B004FD7C2 /* AppDelegate.swift */; };
-		4EE4DE732BC3CD6B004FD7C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE4DE722BC3CD6B004FD7C2 /* SceneDelegate.swift */; };
-		4EE4DE752BC3CD6B004FD7C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE4DE742BC3CD6B004FD7C2 /* ViewController.swift */; };
-		4EE4DE782BC3CD6B004FD7C2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4EE4DE772BC3CD6B004FD7C2 /* Base */; };
+		4EE4DE752BC3CD6B004FD7C2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE4DE742BC3CD6B004FD7C2 /* MainViewController.swift */; };
 		4EE4DE7A2BC3CD6D004FD7C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EE4DE792BC3CD6D004FD7C2 /* Assets.xcassets */; };
 		4EE4DE7D2BC3CD6D004FD7C2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4EE4DE7C2BC3CD6D004FD7C2 /* Base */; };
+		4EE4DE8C2BC3D754004FD7C2 /* MainBodyNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE4DE8B2BC3D754004FD7C2 /* MainBodyNode.swift */; };
+		4EE4DE8E2BC3DBBF004FD7C2 /* Constantcolor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE4DE8D2BC3DBBF004FD7C2 /* Constantcolor.swift */; };
+		4EE4DE922BC3DD74004FD7C2 /* CHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE4DE912BC3DD74004FD7C2 /* CHeader.swift */; };
+		4EE4DE942BC3E332004FD7C2 /* Utilssafearea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE4DE932BC3E332004FD7C2 /* Utilssafearea.swift */; };
+		4EE4DE972BC3EB23004FD7C2 /* MainTabBarNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE4DE962BC3EB23004FD7C2 /* MainTabBarNode.swift */; };
+		FF1518B9F65AC98ECED8C168 /* Pods_catetin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09623320E552050211535972 /* Pods_catetin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09623320E552050211535972 /* Pods_catetin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_catetin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E08AE892BC4E0010037A654 /* MainTabNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabNode.swift; sourceTree = "<group>"; };
+		4E08AE8B2BC4E2A80037A654 /* Utilssize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilssize.swift; sourceTree = "<group>"; };
 		4EE4DE6D2BC3CD6B004FD7C2 /* catetin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = catetin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EE4DE702BC3CD6B004FD7C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4EE4DE722BC3CD6B004FD7C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4EE4DE742BC3CD6B004FD7C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4EE4DE772BC3CD6B004FD7C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4EE4DE742BC3CD6B004FD7C2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4EE4DE792BC3CD6D004FD7C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EE4DE7C2BC3CD6D004FD7C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4EE4DE7E2BC3CD6D004FD7C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EE4DE8B2BC3D754004FD7C2 /* MainBodyNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBodyNode.swift; sourceTree = "<group>"; };
+		4EE4DE8D2BC3DBBF004FD7C2 /* Constantcolor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constantcolor.swift; sourceTree = "<group>"; };
+		4EE4DE912BC3DD74004FD7C2 /* CHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHeader.swift; sourceTree = "<group>"; };
+		4EE4DE932BC3E332004FD7C2 /* Utilssafearea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilssafearea.swift; sourceTree = "<group>"; };
+		4EE4DE962BC3EB23004FD7C2 /* MainTabBarNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarNode.swift; sourceTree = "<group>"; };
+		8FA68970F34D875836B2AC46 /* Pods-catetin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-catetin.debug.xcconfig"; path = "Target Support Files/Pods-catetin/Pods-catetin.debug.xcconfig"; sourceTree = "<group>"; };
+		FA2AB6DBF7CF92475C84FE53 /* Pods-catetin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-catetin.release.xcconfig"; path = "Target Support Files/Pods-catetin/Pods-catetin.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +45,53 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF1518B9F65AC98ECED8C168 /* Pods_catetin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F0CE315EB53E054F79847AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09623320E552050211535972 /* Pods_catetin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		41FC94ED3352A2EF423CF67C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8FA68970F34D875836B2AC46 /* Pods-catetin.debug.xcconfig */,
+				FA2AB6DBF7CF92475C84FE53 /* Pods-catetin.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4E08AE842BC4DFA80037A654 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4E08AE882BC4DFF10037A654 /* MainTabNode */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4E08AE882BC4DFF10037A654 /* MainTabNode */ = {
+			isa = PBXGroup;
+			children = (
+				4E08AE892BC4E0010037A654 /* MainTabNode.swift */,
+			);
+			path = MainTabNode;
+			sourceTree = "<group>";
+		};
 		4EE4DE642BC3CD6B004FD7C2 = {
 			isa = PBXGroup;
 			children = (
 				4EE4DE6F2BC3CD6B004FD7C2 /* catetin */,
 				4EE4DE6E2BC3CD6B004FD7C2 /* Products */,
+				41FC94ED3352A2EF423CF67C /* Pods */,
+				3F0CE315EB53E054F79847AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +106,92 @@
 		4EE4DE6F2BC3CD6B004FD7C2 /* catetin */ = {
 			isa = PBXGroup;
 			children = (
+				4EE4DE8F2BC3DD5F004FD7C2 /* Components */,
+				4EE4DE882BC3D6E6004FD7C2 /* Utils */,
+				4EE4DE872BC3D6E0004FD7C2 /* Constants */,
+				4EE4DE842BC3CDCA004FD7C2 /* Screens */,
 				4EE4DE702BC3CD6B004FD7C2 /* AppDelegate.swift */,
-				4EE4DE722BC3CD6B004FD7C2 /* SceneDelegate.swift */,
-				4EE4DE742BC3CD6B004FD7C2 /* ViewController.swift */,
-				4EE4DE762BC3CD6B004FD7C2 /* Main.storyboard */,
 				4EE4DE792BC3CD6D004FD7C2 /* Assets.xcassets */,
 				4EE4DE7B2BC3CD6D004FD7C2 /* LaunchScreen.storyboard */,
 				4EE4DE7E2BC3CD6D004FD7C2 /* Info.plist */,
 			);
 			path = catetin;
+			sourceTree = "<group>";
+		};
+		4EE4DE842BC3CDCA004FD7C2 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				4EE4DE852BC3CDD8004FD7C2 /* Main */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		4EE4DE852BC3CDD8004FD7C2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4EE4DE862BC3D672004FD7C2 /* Components */,
+				4EE4DE742BC3CD6B004FD7C2 /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4EE4DE862BC3D672004FD7C2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4EE4DE952BC3EB0F004FD7C2 /* MainTabBarNode */,
+				4EE4DE892BC3D735004FD7C2 /* MainBodyNode */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4EE4DE872BC3D6E0004FD7C2 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				4EE4DE8D2BC3DBBF004FD7C2 /* Constantcolor.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		4EE4DE882BC3D6E6004FD7C2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4EE4DE932BC3E332004FD7C2 /* Utilssafearea.swift */,
+				4E08AE8B2BC4E2A80037A654 /* Utilssize.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4EE4DE892BC3D735004FD7C2 /* MainBodyNode */ = {
+			isa = PBXGroup;
+			children = (
+				4EE4DE8B2BC3D754004FD7C2 /* MainBodyNode.swift */,
+			);
+			path = MainBodyNode;
+			sourceTree = "<group>";
+		};
+		4EE4DE8F2BC3DD5F004FD7C2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4EE4DE902BC3DD67004FD7C2 /* CHeader */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4EE4DE902BC3DD67004FD7C2 /* CHeader */ = {
+			isa = PBXGroup;
+			children = (
+				4EE4DE912BC3DD74004FD7C2 /* CHeader.swift */,
+			);
+			path = CHeader;
+			sourceTree = "<group>";
+		};
+		4EE4DE952BC3EB0F004FD7C2 /* MainTabBarNode */ = {
+			isa = PBXGroup;
+			children = (
+				4E08AE842BC4DFA80037A654 /* Components */,
+				4EE4DE962BC3EB23004FD7C2 /* MainTabBarNode.swift */,
+			);
+			path = MainTabBarNode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +201,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4EE4DE812BC3CD6D004FD7C2 /* Build configuration list for PBXNativeTarget "catetin" */;
 			buildPhases = (
+				3D150FD35AD868A3C6C2175D /* [CP] Check Pods Manifest.lock */,
 				4EE4DE692BC3CD6B004FD7C2 /* Sources */,
 				4EE4DE6A2BC3CD6B004FD7C2 /* Frameworks */,
 				4EE4DE6B2BC3CD6B004FD7C2 /* Resources */,
+				33FC272D0EA0ED4D45530CEA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,34 +256,73 @@
 			files = (
 				4EE4DE7A2BC3CD6D004FD7C2 /* Assets.xcassets in Resources */,
 				4EE4DE7D2BC3CD6D004FD7C2 /* Base in Resources */,
-				4EE4DE782BC3CD6B004FD7C2 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		33FC272D0EA0ED4D45530CEA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-catetin/Pods-catetin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-catetin/Pods-catetin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-catetin/Pods-catetin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D150FD35AD868A3C6C2175D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-catetin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4EE4DE692BC3CD6B004FD7C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EE4DE752BC3CD6B004FD7C2 /* ViewController.swift in Sources */,
+				4EE4DE8C2BC3D754004FD7C2 /* MainBodyNode.swift in Sources */,
+				4EE4DE752BC3CD6B004FD7C2 /* MainViewController.swift in Sources */,
+				4E08AE8A2BC4E0010037A654 /* MainTabNode.swift in Sources */,
 				4EE4DE712BC3CD6B004FD7C2 /* AppDelegate.swift in Sources */,
-				4EE4DE732BC3CD6B004FD7C2 /* SceneDelegate.swift in Sources */,
+				4EE4DE972BC3EB23004FD7C2 /* MainTabBarNode.swift in Sources */,
+				4EE4DE8E2BC3DBBF004FD7C2 /* Constantcolor.swift in Sources */,
+				4EE4DE922BC3DD74004FD7C2 /* CHeader.swift in Sources */,
+				4E08AE8C2BC4E2A80037A654 /* Utilssize.swift in Sources */,
+				4EE4DE942BC3E332004FD7C2 /* Utilssafearea.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4EE4DE762BC3CD6B004FD7C2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4EE4DE772BC3CD6B004FD7C2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4EE4DE7B2BC3CD6D004FD7C2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -203,7 +371,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -218,7 +386,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -266,7 +434,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -275,7 +443,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -287,6 +455,7 @@
 		};
 		4EE4DE822BC3CD6D004FD7C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FA68970F34D875836B2AC46 /* Pods-catetin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,11 +464,13 @@
 				DEVELOPMENT_TEAM = 276H2F73WL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = catetin/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Catetin;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +478,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nugroho.catetin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -315,6 +490,7 @@
 		};
 		4EE4DE832BC3CD6D004FD7C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA2AB6DBF7CF92475C84FE53 /* Pods-catetin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -323,11 +499,13 @@
 				DEVELOPMENT_TEAM = 276H2F73WL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = catetin/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Catetin;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,6 +513,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nugroho.catetin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

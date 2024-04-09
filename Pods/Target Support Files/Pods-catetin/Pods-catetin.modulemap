@@ -1,0 +1,6 @@
+framework module Pods_catetin {
+  umbrella header "Pods-catetin-umbrella.h"
+
+  export *
+  module * { export * }
+}
