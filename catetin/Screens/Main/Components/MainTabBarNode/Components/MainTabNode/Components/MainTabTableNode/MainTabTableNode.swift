@@ -10,21 +10,8 @@ import AsyncDisplayKit
 
 class MainTabTableNode: ASDisplayNode {
     
-    var table: ASTableNode?
-    let dataOnProgress: [ModelPosting] = [
-        ModelPosting(postingName: "John Elkan", postingTitle: "Minjem buat lebaran", postingValue: 50000000),
-        ModelPosting(postingName: "John Lenon", postingTitle: "Minjem buat THR", postingValue: 10000000)
-    ]
-    let dataSelesai: [ModelPosting] = [
-        ModelPosting(postingName: "John Elkan", postingTitle: "Main Saham", postingValue: 10000000),
-        ModelPosting(postingName: "John Lenon", postingTitle: "Main BTC", postingValue: 23000000)
-    ]
-    var maindata: [ModelPosting] = [] {
-        didSet {
-            guard let table = table else { return }
-            table.reloadData()
-        }
-    }
+    var table: ASTableNode = ASTableNode()
+    var maindata: [ModelPosting] = []
     
     override init() {
         super.init()
@@ -32,17 +19,12 @@ class MainTabTableNode: ASDisplayNode {
         setupTable()
     }
     
-    func setTableData(type: MainTabType) {
-        if type == MainTabType.onGoing {
-            maindata = dataOnProgress
-        }
-        if type == MainTabType.selesai {
-            maindata = dataSelesai
-        }
+    func setTableData(data: [ModelPosting]) {
+        maindata = data
     }
     
     override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
-        let wrap = ASWrapperLayoutSpec(layoutElement: self.table ?? ASDisplayNode())
+        let wrap = ASWrapperLayoutSpec(layoutElement: self.table)
         return wrap
     }
     
@@ -51,9 +33,9 @@ class MainTabTableNode: ASDisplayNode {
     }
     
     func setupTable() {
-        table = ASTableNode()
-        table?.dataSource = self
-        table?.delegate = self
+        table.dataSource = self
+        table.delegate = self
+        table.backgroundColor = .baseGray
     }
 }
 

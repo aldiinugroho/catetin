@@ -15,13 +15,25 @@ protocol MainTabBarSelectorNodeDelegate: AnyObject {
 class MainTabBarSelectorNode: ASDisplayNode {
     weak var delegate: MainTabBarSelectorNodeDelegate?
     
-    let tv1: ASTextNode = ASCustom.label(value: "On Going", tag: 1)
-    let tv2: ASTextNode = ASCustom.label(value: "Selesai", tag: 2)
+    var tv1: ASTextNode = ASCustom.label(value: "On Going", tag: 1)
+    var tv2: ASTextNode = ASCustom.label(value: "Selesai", tag: 2)
     
     override init() {
         super.init()
         self.automaticallyManagesSubnodes = true
         setupNode()
+        setupGestureRecognizer()
+    }
+    
+    func setActiveBold(type: MainTabType) {
+        if type == MainTabType.onGoing {
+            tv1 = ASCustom.label(value: "On Going", fontWeight: UIFont.Weight.bold, tag: 1)
+            tv2 = ASCustom.label(value: "Selesai", fontWeight: UIFont.Weight.regular, tag: 2)
+        }
+        if type == MainTabType.selesai {
+            tv1 = ASCustom.label(value: "On Going", fontWeight: UIFont.Weight.regular, tag: 1)
+            tv2 = ASCustom.label(value: "Selesai", fontWeight: UIFont.Weight.bold, tag: 2)
+        }
         setupGestureRecognizer()
     }
     
@@ -47,6 +59,7 @@ class MainTabBarSelectorNode: ASDisplayNode {
 
 extension MainTabBarSelectorNode {
     @objc func tvTap(sender: ASTextNode) {
+        print("CLIK")
         if sender.view.tag == 1 {
             delegate?.callbackOnTap(type: MainTabType.onGoing)
         }

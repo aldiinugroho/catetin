@@ -9,18 +9,20 @@ import Foundation
 import AsyncDisplayKit
 
 class MainTabBarNode: ASDisplayNode {
+    var pagerlayout: ASPagerFlowLayout = ASPagerFlowLayout()
     var nodepager: ASPagerNode?
     let datasource: [MainTabType] = [MainTabType.onGoing, MainTabType.selesai]
-    let selector: MainTabBarSelectorNode = MainTabBarSelectorNode()
+    var selector: MainTabBarSelectorNode = MainTabBarSelectorNode()
+    var selectortab: MainTabType?
     
     override init() {
         super.init()
         self.style.flexGrow = 1
         self.automaticallyManagesSubnodes = true
-        let pagerlayout: ASPagerFlowLayout = ASPagerFlowLayout()
         pagerlayout.scrollDirection = .horizontal
         pagerlayout.minimumLineSpacing = 0
         self.nodepager = ASPagerNode(collectionViewLayout: pagerlayout)
+        self.nodepager?.backgroundColor = .baseGray
         self.nodepager?.allowsAutomaticInsetsAdjustment = true
         self.nodepager?.setDelegate(self)
         self.nodepager?.setDataSource(self)
@@ -55,7 +57,7 @@ extension MainTabBarNode: ASPagerDelegate, ASPagerDataSource {
     }
     
     func pagerNode(_ pagerNode: ASPagerNode, nodeAt index: Int) -> ASCellNode {
-        let cell: MainTabNode = MainTabNode()
+        let cell: MainTabCellNode = MainTabCellNode()
         cell.delegate = self
         cell.setupData(type: datasource[index])
         return cell
@@ -63,6 +65,18 @@ extension MainTabBarNode: ASPagerDelegate, ASPagerDataSource {
 }
 
 extension MainTabBarNode: MainTabNodeDelegate {
-    func callbackOnLoad(tabType: MainTabType) {
+    func callbackOnEnterState(tabType: MainTabType) {
+        selectortab = tabType
+        selector.setActiveBold(type: tabType)
+        selector.layoutIfNeeded()
+        selector.setNeedsLayout()
+    }
+    
+    func callbackOnExitState(tabType: MainTabType) {
+        guard selectortab != nil else { return }
+        guard tabType == selectortab else { return }
+        selector.setActiveBold(type: tabType == MainTabType.onGoing ? MainTabType.selesai : MainTabType.onGoing)
+        selector.layoutIfNeeded()
+        selector.setNeedsLayout()
     }
 }

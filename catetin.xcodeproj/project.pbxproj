@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E08AE8A2BC4E0010037A654 /* MainTabNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E08AE892BC4E0010037A654 /* MainTabNode.swift */; };
+		4E08AE8A2BC4E0010037A654 /* MainTabCellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E08AE892BC4E0010037A654 /* MainTabCellNode.swift */; };
 		4E08AE8C2BC4E2A80037A654 /* Utilssize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E08AE8B2BC4E2A80037A654 /* Utilssize.swift */; };
 		4E4E99F92BC8CE3C0061B1E4 /* ModelPosting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4E99F82BC8CE3C0061B1E4 /* ModelPosting.swift */; };
 		4E4E99FD2BC8D2AE0061B1E4 /* MainTabTableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4E99FC2BC8D2AE0061B1E4 /* MainTabTableNode.swift */; };
@@ -27,7 +27,7 @@
 
 /* Begin PBXFileReference section */
 		09623320E552050211535972 /* Pods_catetin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_catetin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4E08AE892BC4E0010037A654 /* MainTabNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabNode.swift; sourceTree = "<group>"; };
+		4E08AE892BC4E0010037A654 /* MainTabCellNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabCellNode.swift; sourceTree = "<group>"; };
 		4E08AE8B2BC4E2A80037A654 /* Utilssize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilssize.swift; sourceTree = "<group>"; };
 		4E4E99F82BC8CE3C0061B1E4 /* ModelPosting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPosting.swift; sourceTree = "<group>"; };
 		4E4E99FC2BC8D2AE0061B1E4 /* MainTabTableNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabTableNode.swift; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				4E4E99FA2BC8D2920061B1E4 /* Components */,
-				4E08AE892BC4E0010037A654 /* MainTabNode.swift */,
+				4E08AE892BC4E0010037A654 /* MainTabCellNode.swift */,
 			);
 			path = MainTabNode;
 			sourceTree = "<group>";
@@ -355,7 +355,7 @@
 				4EE4DE8C2BC3D754004FD7C2 /* MainBodyNode.swift in Sources */,
 				4EE4DE752BC3CD6B004FD7C2 /* MainViewController.swift in Sources */,
 				4E4E99F92BC8CE3C0061B1E4 /* ModelPosting.swift in Sources */,
-				4E08AE8A2BC4E0010037A654 /* MainTabNode.swift in Sources */,
+				4E08AE8A2BC4E0010037A654 /* MainTabCellNode.swift in Sources */,
 				4EE4DE712BC3CD6B004FD7C2 /* AppDelegate.swift in Sources */,
 				4EE4DE972BC3EB23004FD7C2 /* MainTabBarNode.swift in Sources */,
 				4EE4DE8E2BC3DBBF004FD7C2 /* Constantcolor.swift in Sources */,
