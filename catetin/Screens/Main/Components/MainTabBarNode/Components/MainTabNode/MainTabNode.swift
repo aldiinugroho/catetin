@@ -20,22 +20,27 @@ protocol MainTabNodeDelegate: AnyObject {
 class MainTabNode: ASCellNode {
     var tabType: MainTabType?
     weak var delegate: MainTabNodeDelegate?
+    var tableview: MainTabTableNode?
     
     override init() {
         super.init()
+        self.automaticallyManagesSubnodes = true
+        tableview = MainTabTableNode()
+    }
+    
+    override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
+        let wrap = ASWrapperLayoutSpec(layoutElement: self.tableview ?? ASDisplayNode())
+        return wrap
     }
     
     func setupData(type: MainTabType) {
         tabType = type
-        if type == MainTabType.onGoing {
-            self.backgroundColor = .systemBlue
-        } else {
-            self.backgroundColor = .systemRed
-        }
     }
     
     override func didEnterVisibleState() {
         super.didEnterVisibleState()
+        print("ACTIVE - \(tabType ?? MainTabType.onGoing)")
+        tableview?.setTableData(type: tabType ?? MainTabType.onGoing)
         delegate?.callbackOnLoad(tabType: tabType ?? MainTabType.onGoing)
     }
 }

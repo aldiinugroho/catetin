@@ -64,6 +64,5 @@ extension MainTabBarNode: ASPagerDelegate, ASPagerDataSource {
 
 extension MainTabBarNode: MainTabNodeDelegate {
     func callbackOnLoad(tabType: MainTabType) {
-        print("active - \(tabType)")
     }
 }

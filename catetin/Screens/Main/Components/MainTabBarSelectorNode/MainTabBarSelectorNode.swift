@@ -15,8 +15,8 @@ protocol MainTabBarSelectorNodeDelegate: AnyObject {
 class MainTabBarSelectorNode: ASDisplayNode {
     weak var delegate: MainTabBarSelectorNodeDelegate?
     
-    let tv1: ASTextNode = ASCustom.label(value: "On Progress", fontSize: nil, fontColor: nil, fontWeight: nil, tag: 1)
-    let tv2: ASTextNode = ASCustom.label(value: "Selesai", fontSize: nil, fontColor: nil, fontWeight: nil, tag: 2)
+    let tv1: ASTextNode = ASCustom.label(value: "On Going", tag: 1)
+    let tv2: ASTextNode = ASCustom.label(value: "Selesai", tag: 2)
     
     override init() {
         super.init()
@@ -57,9 +57,9 @@ extension MainTabBarSelectorNode {
 }
 
 class ASCustom {
-    static func label(value: String?, fontSize: CGFloat?, fontColor: UIColor?, fontWeight: UIFont.Weight?, tag: Int) -> ASTextNode {
+    static func label(value: String? = nil, fontSize: CGFloat? = nil, fontColor: UIColor? = nil, fontWeight: UIFont.Weight? = nil, tag: Int? = nil) -> ASTextNode {
         let ctx = ASTextNode()
-        ctx.view.tag = tag
+        ctx.view.tag = tag ?? 0
         let attrs: [NSAttributedString.Key: Any] = [
             .font: UIFont.systemFont(ofSize: fontSize ?? 15.0, weight: fontWeight ?? UIFont.Weight.medium),
             .foregroundColor: fontColor ?? UIColor.black
