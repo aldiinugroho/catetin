@@ -19,6 +19,9 @@
 		4E67B6922BCCDD3A006212FF /* CreatePostingBodyNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E67B6912BCCDD3A006212FF /* CreatePostingBodyNode.swift */; };
 		4E67B6952BCCE9C5006212FF /* AccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E67B6942BCCE9C5006212FF /* AccountController.swift */; };
 		4E67B6992BCCEA65006212FF /* AccountBodyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E67B6982BCCEA65006212FF /* AccountBodyController.swift */; };
+		4E6FD2902BCCFCFB00D9A2C0 /* CTitleScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6FD28F2BCCFCFB00D9A2C0 /* CTitleScreen.swift */; };
+		4E6FD2932BCD00CC00D9A2C0 /* CFieldText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6FD2922BCD00CC00D9A2C0 /* CFieldText.swift */; };
+		4E6FD2962BCD133E00D9A2C0 /* ASCEditableTextNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6FD2952BCD133E00D9A2C0 /* ASCEditableTextNode.swift */; };
 		4E9AF31E2BC4EC6B00D8D9C1 /* MainTabBarSelectorNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9AF31D2BC4EC6B00D8D9C1 /* MainTabBarSelectorNode.swift */; };
 		4EE4DE712BC3CD6B004FD7C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE4DE702BC3CD6B004FD7C2 /* AppDelegate.swift */; };
 		4EE4DE752BC3CD6B004FD7C2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE4DE742BC3CD6B004FD7C2 /* MainViewController.swift */; };
@@ -46,6 +49,9 @@
 		4E67B6912BCCDD3A006212FF /* CreatePostingBodyNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostingBodyNode.swift; sourceTree = "<group>"; };
 		4E67B6942BCCE9C5006212FF /* AccountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountController.swift; sourceTree = "<group>"; };
 		4E67B6982BCCEA65006212FF /* AccountBodyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountBodyController.swift; sourceTree = "<group>"; };
+		4E6FD28F2BCCFCFB00D9A2C0 /* CTitleScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTitleScreen.swift; sourceTree = "<group>"; };
+		4E6FD2922BCD00CC00D9A2C0 /* CFieldText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFieldText.swift; sourceTree = "<group>"; };
+		4E6FD2952BCD133E00D9A2C0 /* ASCEditableTextNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASCEditableTextNode.swift; sourceTree = "<group>"; };
 		4E9AF31D2BC4EC6B00D8D9C1 /* MainTabBarSelectorNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarSelectorNode.swift; sourceTree = "<group>"; };
 		4EE4DE6D2BC3CD6B004FD7C2 /* catetin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = catetin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EE4DE702BC3CD6B004FD7C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -190,6 +196,30 @@
 			path = AccountBodyController;
 			sourceTree = "<group>";
 		};
+		4E6FD28E2BCCFCEC00D9A2C0 /* CTitleScreen */ = {
+			isa = PBXGroup;
+			children = (
+				4E6FD28F2BCCFCFB00D9A2C0 /* CTitleScreen.swift */,
+			);
+			path = CTitleScreen;
+			sourceTree = "<group>";
+		};
+		4E6FD2912BCD00B400D9A2C0 /* CFieldText */ = {
+			isa = PBXGroup;
+			children = (
+				4E6FD2922BCD00CC00D9A2C0 /* CFieldText.swift */,
+			);
+			path = CFieldText;
+			sourceTree = "<group>";
+		};
+		4E6FD2942BCD132900D9A2C0 /* ASCEditableTextNode */ = {
+			isa = PBXGroup;
+			children = (
+				4E6FD2952BCD133E00D9A2C0 /* ASCEditableTextNode.swift */,
+			);
+			path = ASCEditableTextNode;
+			sourceTree = "<group>";
+		};
 		4E9AF31B2BC4EC5500D8D9C1 /* MainTabBarSelectorNode */ = {
 			isa = PBXGroup;
 			children = (
@@ -293,6 +323,9 @@
 		4EE4DE8F2BC3DD5F004FD7C2 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				4E6FD2942BCD132900D9A2C0 /* ASCEditableTextNode */,
+				4E6FD2912BCD00B400D9A2C0 /* CFieldText */,
+				4E6FD28E2BCCFCEC00D9A2C0 /* CTitleScreen */,
 				4EE4DE902BC3DD67004FD7C2 /* CHeader */,
 			);
 			path = Components;
@@ -430,8 +463,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E4E9A082BC93DBE0061B1E4 /* MainBarController.swift in Sources */,
+				4E6FD2932BCD00CC00D9A2C0 /* CFieldText.swift in Sources */,
 				4EE4DE8C2BC3D754004FD7C2 /* MainBodyNode.swift in Sources */,
 				4EE4DE752BC3CD6B004FD7C2 /* MainViewController.swift in Sources */,
+				4E6FD2902BCCFCFB00D9A2C0 /* CTitleScreen.swift in Sources */,
 				4E4E99F92BC8CE3C0061B1E4 /* ModelPosting.swift in Sources */,
 				4E67B6922BCCDD3A006212FF /* CreatePostingBodyNode.swift in Sources */,
 				4E67B6992BCCEA65006212FF /* AccountBodyController.swift in Sources */,
@@ -444,6 +479,7 @@
 				4EE4DE8E2BC3DBBF004FD7C2 /* Constantcolor.swift in Sources */,
 				4E4E99FD2BC8D2AE0061B1E4 /* MainTabTableNode.swift in Sources */,
 				4E4E9A042BC8E5390061B1E4 /* Utilsformatcurrency.swift in Sources */,
+				4E6FD2962BCD133E00D9A2C0 /* ASCEditableTextNode.swift in Sources */,
 				4E9AF31E2BC4EC6B00D8D9C1 /* MainTabBarSelectorNode.swift in Sources */,
 				4EE4DE922BC3DD74004FD7C2 /* CHeader.swift in Sources */,
 				4E67B68E2BCCDBF9006212FF /* Utilscontroller.swift in Sources */,
