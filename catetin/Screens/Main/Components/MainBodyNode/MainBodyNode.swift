@@ -9,11 +9,23 @@ import Foundation
 import AsyncDisplayKit
 
 class MainBodyNode: ASDisplayNode {
-    
     let header: ASDisplayNode = CHeader()
     let pager: MainTabBarNode = MainTabBarNode()
+    lazy var btncreate: ASDisplayNode = {
+        let ctx = ASDisplayNode()
+        ctx.backgroundColor = .orange
+        ctx.style.width = ASDimension(unit: .points, value: 50) // Fixed width
+        ctx.style.height = ASDimension(unit: .points, value: 50) // Fixed height
+        ctx.cornerRadius = 25 
+        // Add tap gesture recognizer
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(onTapCreate))
+        ctx.view.addGestureRecognizer(tapGesture)
+        return ctx
+    }()
+    let context: ASDKViewController<ASDisplayNode>
     
-    override init() {
+    init(context: ASDKViewController<ASDisplayNode>) {
+        self.context = context
         super.init()
         self.automaticallyManagesSubnodes = true
     }
@@ -23,6 +35,20 @@ class MainBodyNode: ASDisplayNode {
             self.header,
             self.pager
         ])
-        return stack
+        let relative = ASRelativeLayoutSpec(horizontalPosition: .end,
+                                            verticalPosition: .end,
+                                                sizingOption: [],
+                                            child: self.btncreate)
+        let btmist = Utilssize.getHeight() * 0.11
+        let inset = ASInsetLayoutSpec(insets: .init(top: 0, left: 0, bottom: btmist, right: 10), child: relative)
+        let bg = ASBackgroundLayoutSpec(child: inset, background: stack)
+        return bg
+    }
+}
+
+extension MainBodyNode {
+    @objc func onTapCreate() {
+        print("CREATE CLICK")
+        Routes.push(context: context, to: CreatePosting())
     }
 }

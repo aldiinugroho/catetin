@@ -36,7 +36,25 @@ class MainTabCellNode: ASCellNode {
     func setupData(type: MainTabType) {
         let dataOnProgress: [ModelPosting] = [
             ModelPosting(postingName: "John Elkan", postingTitle: "Minjem buat lebaran", postingValue: 50000000),
-            ModelPosting(postingName: "John Lenon", postingTitle: "Minjem buat THR", postingValue: 10000000)
+            ModelPosting(postingName: "John Lenon", postingTitle: "Minjem buat THR", postingValue: 10000000),
+            ModelPosting(postingName: "John Elkan", postingTitle: "Minjem buat lebaran", postingValue: 50000000),
+            ModelPosting(postingName: "John Lenon", postingTitle: "Minjem buat THR", postingValue: 10000000),
+            ModelPosting(postingName: "John Elkan", postingTitle: "Minjem buat lebaran", postingValue: 50000000),
+            ModelPosting(postingName: "John Lenon", postingTitle: "Minjem buat THR", postingValue: 10000000),
+            ModelPosting(postingName: "John Elkan", postingTitle: "Minjem buat lebaran", postingValue: 50000000),
+            ModelPosting(postingName: "John Lenon", postingTitle: "Minjem buat THR", postingValue: 10000000),
+            ModelPosting(postingName: "John Elkan", postingTitle: "Minjem buat lebaran", postingValue: 50000000),
+            ModelPosting(postingName: "John Lenon", postingTitle: "Minjem buat THR", postingValue: 10000000),
+            ModelPosting(postingName: "John Elkan", postingTitle: "Minjem buat lebaran", postingValue: 50000000),
+            ModelPosting(postingName: "John Lenon", postingTitle: "Minjem buat THR", postingValue: 10000000),
+            ModelPosting(postingName: "John Elkan", postingTitle: "Minjem buat lebaran", postingValue: 50000000),
+            ModelPosting(postingName: "John Lenon", postingTitle: "Minjem buat THR", postingValue: 10000000),
+            ModelPosting(postingName: "John Elkan", postingTitle: "Minjem buat lebaran", postingValue: 50000000),
+            ModelPosting(postingName: "John Lenon", postingTitle: "Minjem buat THR", postingValue: 10000000),
+            ModelPosting(postingName: "John Elkan", postingTitle: "Minjem buat lebaran", postingValue: 50000000),
+            ModelPosting(postingName: "John Lenon", postingTitle: "Minjem buat THR", postingValue: 10000000),
+            ModelPosting(postingName: "John Elkan", postingTitle: "Minjem buat lebaran", postingValue: 50000000),
+            ModelPosting(postingName: "John Lenon", postingTitle: "Minjem buat THR", postingValue: 10000000),
         ]
         let dataSelesai: [ModelPosting] = [
             ModelPosting(postingName: "John Elkan", postingTitle: "Main Saham", postingValue: 10000000),
