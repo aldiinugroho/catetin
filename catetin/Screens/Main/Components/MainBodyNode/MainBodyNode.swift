@@ -9,7 +9,7 @@ import Foundation
 import AsyncDisplayKit
 
 class MainBodyNode: ASDisplayNode {
-    let header: ASDisplayNode = CHeader()
+    var header: ASDisplayNode?
     let pager: MainTabBarNode = MainTabBarNode()
     lazy var btncreate: ASDisplayNode = {
         let ctx = ASDisplayNode()
@@ -28,11 +28,16 @@ class MainBodyNode: ASDisplayNode {
         self.context = context
         super.init()
         self.automaticallyManagesSubnodes = true
+        setContext()
+    }
+    
+    func setContext() {
+        self.header = CHeader(context: context)
     }
     
     override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
         let stack = ASStackLayoutSpec(direction: .vertical, spacing: 0, justifyContent: .start, alignItems: .start, children: [
-            self.header,
+            self.header ?? ASDisplayNode(),
             self.pager
         ])
         let relative = ASRelativeLayoutSpec(horizontalPosition: .end,
@@ -49,6 +54,7 @@ class MainBodyNode: ASDisplayNode {
 extension MainBodyNode {
     @objc func onTapCreate() {
         print("CREATE CLICK")
-        Routes.push(context: context, to: CreatePosting())
+        let createScreen: ASDKViewController<ASDisplayNode> = CreatePosting()
+        Routes.push(context: context, to: createScreen)
     }
 }

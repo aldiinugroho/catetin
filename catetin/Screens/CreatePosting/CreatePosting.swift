@@ -9,11 +9,21 @@ import Foundation
 import AsyncDisplayKit
 
 class CreatePosting: ASDKViewController<ASDisplayNode> {
-    let mainnode: ASDisplayNode = ASDisplayNode()
+    var mainnode: CreatePostingBodyNode?
     
     override init() {
         super.init(node: ASDisplayNode())
-        node.backgroundColor = .orange
+        self.mainnode = CreatePostingBodyNode(context: self)
+        node.automaticallyManagesSubnodes = true
+        node.backgroundColor = UIColor.baseGray
+        node.layoutSpecBlock = {_,_ -> ASLayoutSpec in
+            return ASInsetLayoutSpec(insets: .zero, child: self.mainnode ?? ASDisplayNode())
+        }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.hideNavigationBar()
     }
     
     required init?(coder: NSCoder) {

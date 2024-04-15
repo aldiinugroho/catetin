@@ -19,14 +19,36 @@ class CHeader: ASDisplayNode {
         return ctx
     }()
     
-    override init() {
+    let backbtn: ASTextNode = ASCustom.label(value: "Kembali")
+    let context: ASDKViewController<ASDisplayNode>
+    var withBackBtn: Bool?
+    
+    init(context: ASDKViewController<ASDisplayNode>, withBackBtn: Bool = false) {
+        self.context = context
+        self.withBackBtn = withBackBtn
         super.init()
         self.backgroundColor = .baseYellow
         self.automaticallyManagesSubnodes = true
+        registerListener()
+    }
+    
+    func registerListener() {
+        self.backbtn.addTarget(self, action: #selector(onClickBackBtn), forControlEvents: .touchDown)
     }
     
     override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
-        let inset = ASInsetLayoutSpec(insets: UIEdgeInsets(top: Utilssafearea.top(), left: 0, bottom: 0, right: 0), child: self.boxdisplay)
+        let stack = ASStackLayoutSpec(direction: .vertical, spacing: 0, justifyContent: .start, alignItems: .start, children: [
+            self.withBackBtn == false ? ASDisplayNode() : self.backbtn
+        ])
+        stack.style.width = ASDimensionMake("100%")
+        let inset = ASInsetLayoutSpec(insets: UIEdgeInsets(top: Utilssafearea.top() + 10, left: 10, bottom: 10, right: 10), child: stack)
         return inset
+    }
+}
+
+extension CHeader {
+    @objc func onClickBackBtn() {
+        print("BACK BUTTON")
+        Routes.pop(context: context)
     }
 }
