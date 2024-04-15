@@ -8,7 +8,7 @@
 import Foundation
 import AsyncDisplayKit
 
-class CreatePosting: ASDKViewController<ASDisplayNode> {
+class CreatePostingController: ASDKViewController<ASDisplayNode> {
     var mainnode: CreatePostingBodyNode?
     
     override init() {

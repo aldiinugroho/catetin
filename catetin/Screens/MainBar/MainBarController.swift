@@ -12,7 +12,7 @@ class MainBarController: ASTabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let view1: ASDKViewController<ASDisplayNode> = setupBar(view: MainViewController(), title: "Home")
-        let view2: ASDKViewController<ASDisplayNode> = setupBar(view: ASDKViewController(), title: "Account")
+        let view2: ASDKViewController<ASDisplayNode> = setupBar(view: AccountController(), title: "Account")
         self.tabBar.backgroundColor = .white
         self.tabBar.tintColor = .black
         self.setViewControllers([

@@ -1,22 +1,21 @@
 //
-//  ViewController.swift
+//  AccountController.swift
 //  catetin
 //
-//  Created by aldinugroho on 08/04/24.
+//  Created by aldinugroho on 15/04/24.
 //
 
-import UIKit
+import Foundation
 import AsyncDisplayKit
 
-class MainViewController: ASDKViewController<ASDisplayNode> {
-    
-    var mainnode: MainBodyNode?
+class AccountController: ASDKViewController<ASDisplayNode> {
+    var mainnode: AccountBodyController?
     
     override init() {
         super.init(node: ASDisplayNode())
-        self.mainnode = MainBodyNode(context: self)
+        self.mainnode = AccountBodyController(context: self)
+        node.backgroundColor = .baseGray
         node.automaticallyManagesSubnodes = true
-        node.backgroundColor = UIColor.baseGray
         node.layoutSpecBlock = {_,_ -> ASLayoutSpec in
             return ASInsetLayoutSpec(insets: .zero, child: self.mainnode ?? ASDisplayNode())
         }

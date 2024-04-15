@@ -54,7 +54,7 @@ class MainBodyNode: ASDisplayNode {
 extension MainBodyNode {
     @objc func onTapCreate() {
         print("CREATE CLICK")
-        let createScreen: ASDKViewController<ASDisplayNode> = CreatePosting()
+        let createScreen: ASDKViewController<ASDisplayNode> = CreatePostingController()
         Routes.push(context: context, to: createScreen)
     }
 }
